@@ -1,0 +1,15 @@
+{% extends 'home.html'%}
+{% block i %}
+<p>i</p>
+<p>zxc</p>
+{% for o in tovar %}
+<div>
+<ln>Название товара:</ln><ln>{{o.tovar_name}}</ln></br>
+<ln>Цена:</ln><ln>{{o.tovar_price}}</ln></br>
+</div>
+{%endfor%}
+{% endblock %}
+
+{% block itog %}
+    <ln>Itog:</ln> <ln>{{itog}}</ln> <ln>рублей</ln>
+{% endblock %}
